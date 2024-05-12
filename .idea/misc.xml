@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/border.xml" value="0.2525" />
+        <entry key="app/src/main/res/drawable/nav_custom.xml" value="0.2525" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27343597412109377" />
         <entry key="app/src/main/res/layout/blog_adapter.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_bookmark.xml" value="0.2776268115942029" />
