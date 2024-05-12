@@ -1,6 +1,5 @@
 package com.blackpuppydev.webblog.fragment
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -15,6 +14,7 @@ import com.blackpuppydev.webblog.api.ApiRepository
 import com.blackpuppydev.webblog.constance.LandingPage
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.lang.ClassCastException
+import android.content.Context as Context
 
 private const val ARG_BLOG = "blog"
 
@@ -23,6 +23,7 @@ class HomeFragment : Fragment() {
     private var blog: ArrayList<ApiRepository.Data>? = null
 
     private lateinit var listener:FragmentEvent
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +50,7 @@ class HomeFragment : Fragment() {
 
 
 
-        list_blog.adapter = object : BlogAdapter(blog){
+        list_blog.adapter = object : BlogAdapter(blog,context){
             override fun onItemClick(currentBlog: ArrayList<ApiRepository.Data>) {
                 listener.onResult(currentBlog,LandingPage.PAGE_HOME)
             }
@@ -81,7 +82,7 @@ class HomeFragment : Fragment() {
             }
         }
 
-        list_blog.adapter = object : BlogAdapter(filterList){
+        list_blog.adapter = object : BlogAdapter(filterList,context){
             override fun onItemClick(currentBlog: ArrayList<ApiRepository.Data>) {
                 listener.onResult(currentBlog,LandingPage.PAGE_HOME)
             }

@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/border.xml" value="0.2525" />
+        <entry key="app/src/main/res/drawable/border_dialog.xml" value="0.1395" />
+        <entry key="app/src/main/res/drawable/button_base.xml" value="0.1395" />
         <entry key="app/src/main/res/drawable/nav_custom.xml" value="0.2525" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27343597412109377" />
         <entry key="app/src/main/res/layout/blog_adapter.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/blog_dialog.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/fragment_bookmark.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_unread.xml" value="0.2776268115942029" />

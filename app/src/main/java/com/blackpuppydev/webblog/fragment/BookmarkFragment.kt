@@ -26,6 +26,7 @@ class BookmarkFragment : Fragment() {
 
     private lateinit var listener: FragmentEvent
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -56,7 +57,7 @@ class BookmarkFragment : Fragment() {
             }
         }
 
-        list_blog.adapter = object : BlogAdapter(bookmarkBlog){
+        list_blog.adapter = object : BlogAdapter(bookmarkBlog,context){
             override fun onItemClick(currentBlog: ArrayList<ApiRepository.Data>) {
 
                 for (baseBlog in blog!!){
@@ -97,7 +98,7 @@ class BookmarkFragment : Fragment() {
             }
         }
 
-        list_blog.adapter = object : BlogAdapter(filterList){
+        list_blog.adapter = object : BlogAdapter(filterList,context){
             override fun onItemClick(currentBlog: ArrayList<ApiRepository.Data>) {
                 for (baseBlog in blog!!){
                     for (current in currentBlog){

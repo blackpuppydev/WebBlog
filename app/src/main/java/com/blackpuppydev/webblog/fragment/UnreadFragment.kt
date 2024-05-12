@@ -57,7 +57,7 @@ class UnreadFragment : Fragment() {
             }
         }
 
-        list_blog.adapter = object : BlogAdapter(bookmarkUnread){
+        list_blog.adapter = object : BlogAdapter(bookmarkUnread,context){
             override fun onItemClick(currentBlog: ArrayList<ApiRepository.Data>) {
 
                 for (baseBlog in blog!!){
@@ -98,7 +98,7 @@ class UnreadFragment : Fragment() {
             }
         }
 
-        list_blog.adapter = object : BlogAdapter(filterList){
+        list_blog.adapter = object : BlogAdapter(filterList,context){
             override fun onItemClick(currentBlog: ArrayList<ApiRepository.Data>) {
                 for (baseBlog in blog!!){
                     for (current in currentBlog){
