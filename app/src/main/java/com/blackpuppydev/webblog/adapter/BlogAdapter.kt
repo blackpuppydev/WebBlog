@@ -41,7 +41,7 @@ abstract class BlogAdapter(private var blogList: ArrayList<ApiRepository.Data>?)
 
         holder.itemView.setOnClickListener{
             if (!blogList!![position].read){
-                holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"))
+                holder.itemView.adapter_blog.setBackgroundColor(Color.parseColor("#ffffff"))
                 blogList!![position].read = true
                 onItemClick(blogList!!)
             }
@@ -67,9 +67,9 @@ abstract class BlogAdapter(private var blogList: ArrayList<ApiRepository.Data>?)
             } else itemView.btn_bookmark.setImageResource(R.drawable.ic_baseline_bookmark_border_24)
 
             if (currentBlog.read){
-                itemView.setBackgroundColor(Color.parseColor("#ffffff"))
+                itemView.adapter_blog.setBackgroundColor(Color.parseColor("#ffffff"))
             }else{
-                itemView.setBackgroundColor(Color.parseColor("#c2dfeb"))
+                itemView.adapter_blog.setBackgroundColor(Color.parseColor("#c2dfeb"))
             }
 
         }
