@@ -1,4 +1,10 @@
 Web blog Demo <br>
+
+
+current ver <br>
+![Screenshot_20240513_174036](https://github.com/blackpuppydev/WebBlog/assets/91581428/3a68bfcf-837f-42db-bd22-12687c7dcbac)
+<br><br>
+
 ![Screenshot_20240512_144102](https://github.com/blackpuppydev/WebBlog/assets/91581428/bf0ce246-74fe-4861-8e9f-0b252f6c0433)
 <br><br>
 
