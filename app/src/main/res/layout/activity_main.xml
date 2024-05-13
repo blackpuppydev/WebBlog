@@ -23,8 +23,15 @@
         app:menu="@menu/bottom_navmenu"
         android:background="@drawable/nav_custom"
         android:layout_alignParentBottom="true"
-        android:layout_margin="5dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        app:itemRippleColor="@color/black"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:itemTextAppearanceActive="@style/BottomNavigationView"
+
+        />
 
 
 </RelativeLayout>

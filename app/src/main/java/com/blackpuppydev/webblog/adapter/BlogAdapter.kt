@@ -65,7 +65,7 @@ abstract class BlogAdapter(private var blogList: ArrayList<ApiRepository.Data>?,
         @SuppressLint("ResourceAsColor")
         fun setData(currentBlog: ApiRepository.Data){
             itemView.title.text = currentBlog.title
-            itemView.title_detail.text = currentBlog.body
+//            itemView.title_detail.text = currentBlog.body
 
             if (currentBlog.bookMark){
                 itemView.btn_bookmark.setImageResource(R.drawable.ic_baseline_bookmark_24)
